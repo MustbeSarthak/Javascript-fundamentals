@@ -53,3 +53,14 @@ attribute.href = "https://www.google.com"; // It will change the href attribute 
 let img = document.querySelector("img");
 img.src = "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"; // It will change the src attribute of the image tag
 img.alt = "Google Logo"; // It will change the alt attribute of the image tag
+
+
+// If we want any attribute 
+// We getting the attriubute of a
+let hrefValue = attribute.getAttribute("href");
+console.log(hrefValue); // It will return the value of the href attribute of the anchor tag
+// Aise hi saare attributes ke liye getAttribute method ka use kar sakte hai
+
+// Removing attribute
+attribute.removeAttribute("href"); // It will remove the href attribute from the anchor tag
+
