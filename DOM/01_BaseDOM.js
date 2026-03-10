@@ -22,8 +22,16 @@ console.log(abcde);
 
 /*
 -------------------------TYPES OF MANIPULATION-------------------------
-1. Changing text
 
+1. Changing text - innertext, textContent, innerHTML.
+2. changing html - innerHTML
+3. changing css - style
+4. changing attribute - setAttribute, getAttribute, removeAttribute
+5. Event listener - addEventListener, removeEventListener
+6. Creating element - createElement, appendChild, removeChild
+7. Traversing element - parentNode, childNodes, nextSibling, previousSibling
+
+--------------------------TYPES OF MANIPULATION--------------------------
 */
 
 // Changing text
@@ -32,3 +40,16 @@ h1.textContent = "Hello Sarthak Kaise ho";
 console.logdir(h1);
 // textContent will change the text of the element but it will not change the html structure of the element
 // innerText will change the text of the element and it will also change the html structure of the element
+
+h1.innerHTML = "Sarthak badhiya hai";
+// innerHTML will change the html structure of the element and it will also change the text of the element  
+
+// ________________________________ATTRIBUTES___________________________________
+let attribute = document.querySelector("a");
+
+attribute.href = "https://www.google.com"; // It will change the href attribute of the anchor tag
+
+// Changing Image attribute
+let img = document.querySelector("img");
+img.src = "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"; // It will change the src attribute of the image tag
+img.alt = "Google Logo"; // It will change the alt attribute of the image tag
